@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      rel="shortcut icon"
+      href="image/cloud+day+forecast+lightning+shine+storm+sun+weather+icon-1320183295537909806.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="CSS/all.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JS/bootstrap.bundle.js"></script>
+  </head>
+
+  <body>
+    <!-- Start NavBar -->
+    <nav class="navbar p-5 navbar-expand-lg navbar-dark bg-light">
+      <div class="container">
+        <i class="fas fa-cloud mx-3 fs-1" style="color: var(--textColor)"></i>
+        <h1 class="navbar-brand" href="#">Weather</h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- Start Weather Section -->
+    <section class="cityImage">
+      <div class="container py-5">
+        <form class="mb-5">
+        <input type="text" class="form-control text-white" id="search" placeholder="Find Your Location...">
+        <button type="submit" id="submitButton" class="btn btn-info p-2 " > <i class="fas fa-search mx-2"></i>Find</button>
+       </form>
+
+       <div class="row g-2 forecast" id="displayData">
+         <!-- <div class="col-md-6 col-sm-12 text-white forecast" style="background-color: var(--mainColor);">
+           <div class="itemWeather">
+             <div class="itemHeader1 p-2 d-flex align-items-center justify-content-between">
+               <p>Monday</p>
+               <p>17 January</p>
+             </div>
+             <div class="city">
+              <h3>Cairo</h3>
+             </div>
+
+             <div class="itemContent1 d-flex justify-content-evenly align-items-center">
+               <span>13 <sup>o</sup>C</span>
+               <i class="fa fa-cloud"></i>
+             </div>
+
+             <div class="itemFooter pb-3 text-center row">
+              <p class="ps-4 fw-bold fs-4 text-start" style="color: var(--textColor);">Partly cloudy</p>
+               <div class="col-md-4">
+                <i class="fas fa-tint"></i>
+                <span>Humidity: 70%</span>
+               </div>
+               <div class="col-md-4">
+                <i class="fas fa-wind"></i>
+                <span>Wind: 18 Km/h</span>
+               </div>
+               <div class="col-md-4">
+                <i class="far fa-compass"></i>
+                <span>Location: Africa</span>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <div class="col-md-3 col-sm-12 text-white forecast" style="background-color: #373b50;">
+          <div class="itemWeather">
+            <div class="itemHeader2 p-2  text-center">
+              <p>Tuesday</p>
+            </div>
+            <div class="itemContent2 text-center">
+              <i class="fa fa-cloud d-block pb-2"></i>
+              <span class="pb-5 m-5">13 <sup>o</sup>C</span>
+              <p class="mt-5 fw-bold" style="color: var(--textColor);">Partly cloudy</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-12 text-white forecast" style="background-color: var(--mainColor);">
+          <div class="itemWeather">
+            <div class="itemHeader3 p-2  text-center">
+              <p>Tuesday</p>
+            </div>
+            <div class="itemContent2 text-center">
+              <i class="fa fa-cloud d-block pb-2"></i>
+              <span class="pb-5 m-5">13 <sup>o</sup>C</span>
+              <p class="mt-5 fw-bold" style="color: var(--textColor);">Partly cloudy</p>
+            </div>
+          </div>
+        </div> -->
+       </div>
+      </div>
+    </section>
+    <!-- End Weather Section -->
+
+    <!-- Start Footer Section -->
+    <footer style="background-color: #262936;">
+      <div class="container">
+        <div class="row g-1">
+          <div class="col-md-6 col-sm-12">
+            <form class="m-5">
+              <input type="text" class="form-control my-5" id="search" placeholder="Enter your email to subscribe....">
+              <button type="submit" id="submitButton" class="btn btn-info p-2 " > <i class="fas fa-search mx-2"></i>Find</button>
+             </form>
+          </div>
+          <div class="col-md-5 col-sm-12 offset-md-1 footerIcons text-center">
+            <div class="icons m-5">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-github"></i>
+              <i class="fab fa-pinterest-p"></i>
+            </div>
+          </div>
+
+          <!-- Copyright region -->
+          <p class="text-white">Copyright <sup><i class="far fa-registered"></i></sup> 2022 Company <a href="#" class="text-decoration-none" style="color: var(--textColor);"> PS.</a></p>
+          <span class="text-white pb-4">Designed by <a href="#" class="text-decoration-none" style="color: var(--textColor);"> Paula S.Farag.</a> All rights reserved</span>
+        </div>
+      </div>
+
+    </footer>
+    <!-- End Footer Section -->
+
+   
+<!-- Start JavaScript Section -->
+    <script src="JS/main.js"></script>
+  </body>
+</html>

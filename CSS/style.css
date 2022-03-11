@@ -1,0 +1,127 @@
+* {
+  font-family: "Roboto", "Open Sans", sans-serif;
+}
+:root {
+  --mainColor: #1e202b;
+  --textColor: #1eb8f5;
+}
+/* Pseudo Element */
+::-webkit-scrollbar{
+  width: 7px;
+  background-color: #1eb8f5;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb{
+background-color: #1e202b;
+border-radius: 25px;
+}
+::selection{
+  color: #1eb8f5;
+  background-color: #1e202b;
+}
+/* ---------------------------------------------------------- */
+.navbar {
+  background-color: var(--mainColor) !important;
+}
+nav h1 {
+  position: relative;
+  cursor: pointer;
+}
+nav h1::after {
+  content: "tagline goes here";
+  font-size: 12px;
+  color: rgb(172, 172, 172);
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  cursor: pointer;
+}
+nav i {
+  cursor: pointer;
+}
+nav .nav-item a {
+  margin: 25px !important;
+}
+nav .nav-item a {
+
+  transition: color 0.5s, border 0.5s;
+  font-size: 16px;
+  color: white !important;
+  padding: 5px 25px;
+  border: 2px solid transparent;
+  border-radius: 25px;
+}
+nav .nav-item .active {
+  color: var(--textColor) !important;
+  border: solid var(--textColor) 2px;
+  border-radius: 25px;
+}
+nav .nav-item:hover a {
+  color: var(--textColor) !important;
+  border: solid var(--textColor) 2px;
+  border-radius: 25px;
+}
+@media screen and (max-width: 990px) {
+  nav ul li {
+    text-align: center;
+  }
+  nav .nav-item a {
+    width: 100%;
+  }
+}
+.cityImage {
+  /* background-image: url(../image/1339694.jpg); */
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+@media screen and (max-width: 990px) {
+  .cityImage {
+    height:170vh;
+  }
+}
+form {
+  position: relative;
+}
+#search {
+  background-color: var(--mainColor);
+  border: solid 2px var(--mainColor);
+  border-radius: 25px;
+  height: 60px;
+  position: relative;
+}
+#submitButton {
+  height: 55px;
+  width: 90px;
+  border-radius: 25px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+.forecast {
+  border-radius: 7px !important;
+}
+.itemWeather {
+  margin: 5px;
+}
+.itemContent1 span {
+  font-size: 80px;
+}
+.itemContent1 i {
+  font-size: 80px;
+}
+.itemContent2 {
+  font-size: 25px;
+}
+.footerIcons .icons i {
+  font-size: 25px;
+  margin: 15px;
+  cursor: pointer;
+  transition: color 0.5s;
+  color: rgb(133, 133, 133);
+}
+.footerIcons .icons i:hover {
+  color: var(--textColor);
+}
